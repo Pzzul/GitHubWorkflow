@@ -1,0 +1,64 @@
+insert into  USER_ROLES VALUES(100, 'ROLE_USER');
+insert into  USER_ROLES VALUES(200, 'ROLE_ADMIN');
+
+
+insert into USERS VALUES
+(1,'Bo','Dong','eseshen@gmail.com','male',25,'123456','5 independence way','priceton',08540,'NJ','abcdefghijklmnopqrst',0,100);
+insert into USERS VALUES
+(2,'Yunhui','Zeng','zengyunhui922@gmail.com','male',25,'123456','5 independece way','priceton',08540,'NJ','12345678901234567890',1,100);
+insert into USERS VALUES
+(3,'Yile','Wang','yilewang123@gmail.com','',0,'abcde','','',0,'','',1,200);
+
+INSERT INTO ORDERS VALUES
+(1,1,'22-SEP-2015',0000111122223333,0);
+INSERT INTO ORDERS VALUES
+(2,2,'23-SEP-2015',1234123412341234,1);
+
+insert into STATION values
+(1,'Penn Station Tailors','11 Pennsylvania Plaza','New York',10001,'NY',1);
+insert into STATION values
+(2,'30th Street Station','2955 M,arket St Philadelphia','Philadelphia',19104,'PA',1);
+insert into STATION values
+(3,'Union Station','50 Massachusetts Ave NE','Washington',20002,'DC',1);
+insert into STATION values
+(4,'Union Station','601 N Nebraska Ave','Tampa',33602,'FL',1);
+insert into STATION values
+(5,'MIA','2100 NW 42nd Ave','Miami',33126,'FL',1);
+
+
+insert into CREDITCARD values
+(1,1,'3333222211110000','master','Bo','Dong','09/2017','5 independence way','Priceton',08540,'NJ');
+insert into CREDITCARD values
+(2,2,'2222333344445555','visa','Yunhui','Zeng','07/2018','5 indepedence way','Priceton',08540,'NJ');
+
+insert into TRAIN values( 101, 50,  1);
+insert into TRAIN values( 103, 200, 1);
+insert into TRAIN values( 102, 400, 1);
+
+insert into TRANSIT values
+(1,101,1,1, TO_TIMESTAMP('1970-01-01 08:00:00', 'yyyy-mm-dd hh24:mi:ss'), 0, 0);
+insert into TRANSIT values
+(2,101,2,2,TO_TIMESTAMP('1970-01-01 08:30:00', 'yyyy-mm-dd hh24:mi:ss'), 5, 60);
+insert into TRANSIT values
+(3,101,3,3,TO_TIMESTAMP('1970-01-01 08:50:00', 'yyyy-mm-dd hh24:mi:ss'), 10, 90);
+insert into TRANSIT values
+(4,103,1,3,TO_TIMESTAMP('1970-01-01 15:00:00', 'yyyy-mm-dd hh24:mi:ss'), 0, 0);
+insert into TRANSIT values
+(5,103,2,4,TO_TIMESTAMP('1970-01-01 16:00:00', 'yyyy-mm-dd hh24:mi:ss'), 7, 150);
+insert into TRANSIT values
+(6,103,3,5,TO_TIMESTAMP('1970-01-01 16:20:00', 'yyyy-mm-dd hh24:mi:ss'), 10, 50);
+
+
+insert into TRANSIT values
+(7,102,1,1,TO_TIMESTAMP('1970-01-01 08:00:00', 'yyyy-mm-dd hh24:mi:ss'), 0, 0);
+insert into TRANSIT values
+(8,102,2,2,TO_TIMESTAMP('1970-01-01 08:30:00', 'yyyy-mm-dd hh24:mi:ss'), 5, 60);
+insert into TRANSIT values
+(9,102,3,3,TO_TIMESTAMP('1970-01-01 08:50:00', 'yyyy-mm-dd hh24:mi:ss'), 10, 90);
+
+insert into TICKET values
+(1,'25-SEP-2015',2, 1, 3, 150, 1);
+insert into TICKET values
+(2,'28-SEP-2015',1, 4, 6, 200, 1);
+insert into TICKET values
+(3,'03-OCT-2015',1, 4, 6, 200, 1);
